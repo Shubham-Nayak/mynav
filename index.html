@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="bg.jpg">
+
+	<script src="js/jquery.js"></script>
+	<!-- og tags seo-->
+	<meta property="og:url"                content="www.xyz.com" />
+	<meta property="og:type"               content="article" />
+     <meta property="og:title"              content="When Great Minds Don’t Think Alike" />	
+     <link rel="stylesheet" type="text/css" href="https://jhollingworth.github.io/bootstrap-wysihtml5//lib/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="https://jhollingworth.github.io/bootstrap-wysihtml5//lib/css/prettify.css"></link>
+    <link rel="stylesheet" type="text/css" href="https://jhollingworth.github.io/bootstrap-wysihtml5//src/bootstrap-wysihtml5.css"></link>
+
+</head>
+<style>
+form{
+	background-color: #59dfec;
+    padding: 10px;
+}
+img{
+	width: 61px;
+    height: 43px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+</style>
+
+<body>
+	<div class="mydiv"> 
+
+		<h1>Hi</h1>
+	</div>
+</body>
+ <script src="https://jhollingworth.github.io/bootstrap-wysihtml5//lib/js/wysihtml5-0.3.0.js"></script>
+    <script src="https://jhollingworth.github.io/bootstrap-wysihtml5//lib/js/jquery-1.7.2.min.js"></script>
+    <script src="https://jhollingworth.github.io/bootstrap-wysihtml5//lib/js/prettify.js"></script>
+    <script src="https://jhollingworth.github.io/bootstrap-wysihtml5//lib/js/bootstrap.min.js"></script>
+    <script src="https://jhollingworth.github.io/bootstrap-wysihtml5//src/bootstrap-wysihtml5.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('.textarea').wysihtml5();
+        });
+    </script>
+<script>
+	$(document).ready(function(){
+		$('#con_password').keyup(function(){
+			var pass=$('#password').val();
+			var passtwo=$('#con_password').val();
+           if(pass==passtwo){
+			$('.msg').css('color','green');
+
+			$('.msg').html('Password  Match');
+
+		   }else{
+			$('.msg').css('color','red');
+
+
+			$('.msg').html('Password Not Match');
+
+		   }
+		});
+	});
+</script>
+</html>
